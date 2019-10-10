@@ -1,7 +1,7 @@
 'use strict';
 
 const EventEmitter = function() {
-  this.events = {}; // hash of array of function
+  this.events = {};
 };
 
 EventEmitter.prototype.on = function(name, func) {
