@@ -21,4 +21,4 @@ EEmitter.on('event', data => {
   console.dir(data);
 });
 
-EEmitter.emit('event', { data: -110});
+EEmitter.emit('event', { data: -110 });
