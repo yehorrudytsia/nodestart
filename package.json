@@ -12,21 +12,22 @@
   },
   "scripts": {
     "test": "npm run lint",
-    "lint": "eslint .",
-    "start": "node App.js"
+    "lint": "eslint --ignore-path .gitignore src",
+    "start": "node src/App.js"
   },
   "engines": {
     "node": ">=8.0.0"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
+    "eslint-plugin-sonarjs": "^0.4.0",
     "husky": "^3.0.8",
     "prettier": "^1.18.2"
   },
   "husky": {
     "hooks": {
-      "precommit":"npm run prettier",
-      "prepush": "call npm run test"
-      },
+      "precommit": "npm run prettier",
+      "prepush": "npm run test"
     }
+  }
 }
