@@ -6,4 +6,4 @@ script:
   - npm run build
 deploy:
   github-token: $GITHUB_TOKEN
-  on:
+  firebase-token: $FIREBASE_TOKEN
