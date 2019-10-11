@@ -2,8 +2,8 @@ language: node_js
 node_js:
   - 10
 script:
-  - npm test
-  - npm run build
-deploy:
-  github-token: $GITHUB_TOKEN
-  firebase-token: $FIREBASE_TOKEN
+  - npm lint
+  - npm run deploy
+branches:
+  only:
+    - master
