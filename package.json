@@ -14,7 +14,8 @@
     "test": "npm run lint",
     "lint": "eslint --ignore-path .gitignore src",
     "deploy": "firebase deploy --token $FIREBASE_TOKEN",
-    "start": "node src/App.js"
+    "start": "node src/App.js",
+    "postinstall": "cd functions && npm ci"
   },
   "engines": {
     "node": ">=8.0.0"
